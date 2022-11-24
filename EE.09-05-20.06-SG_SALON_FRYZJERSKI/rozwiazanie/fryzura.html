@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Usługi fryzjerskie</title>
+        <link rel="stylesheet" href="styl2.css" type="text/css">
+    </head>
+    <body>
+        <section id="lewy1">
+            <a href="index.html"><h2>SALON FRYZJERSKI</h2></a>
+            <img src="obraz2.jpg" alt="Czesanie">
+        </section>
+        <section id="prawy1">
+            <h2>MENU</h2>
+        </section>
+        <section id="prawy2">
+            <ol>
+                <li><a href="fryzura.html">Strzyżenie</a>
+                    <ul>
+                        <li>krótkie</li>
+                        <li>średnie</li>
+                        <li>półdługie</li>
+                        <li>długie</li>
+                    </ul>
+                </li>
+                <li>Czesanie</li>
+                <li>Koloryzacja</li>
+            </ol>
+        </section>
+        <section id="lewy2">
+            <h3>Dziś promocja na strzyżenie włosów</h3>
+            <input type="radio" name="r">Krótkie<br>
+            <input type="radio" name="r">Średnie<br>
+            <input type="radio" name="r">Półdługie<br>
+            <input type="radio" name="r">Długie<br>
+            <button type="button" onclick="odkryjPromocje();">Odkryj promocję</button>
+            <div id="promka"></div>
+        </section>
+        <section id="prawy3">
+            <img src="obraz1.jpg" alt="Fryzjer">
+        </section>
+        <footer>
+            <p>Autor: 12345678912</p>
+        </footer>
+        <script>
+            function odkryjPromocje()
+            {
+                var opcje = document.getElementsByTagName("input");
+                var cena = 0;
+
+                if(opcje[0].checked)
+                    cena = 25;
+                else if(opcje[1].checked)
+                    cena = 30;
+                else if(opcje[2].checked)
+                    cena = 40;
+                else if(opcje[3].checked)
+                    cena = 50;
+                if( cena != 0)
+                {
+                    document.querySelector('#promka').innerText = "Cena strzyżenia: " + cena;
+                    document.querySelector('#promka').style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
