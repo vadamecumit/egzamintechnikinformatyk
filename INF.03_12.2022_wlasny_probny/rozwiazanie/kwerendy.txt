@@ -1,0 +1,4 @@
+SELECT COUNT(*) FROM uzytkownicy WHERE uprawnienia_id = 4;
+SELECT uzytkownicy.IMIE, uzytkownicy.NAZWISKO, uzytkownicy.EMAIL, uprawnienia.NAME FROM uzytkownicy inner JOIN uprawnienia ON uzytkownicy.uprawnienia_id = uprawnienia.ID;
+CREATE USER 'agent'@'localhost' IDENTIFIED BY 'tajneHaslo';
+GRANT ALL PRIVILEGES ON tajnabaza.* TO 'agent'@'localhost';
