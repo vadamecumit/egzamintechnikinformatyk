@@ -8,15 +8,15 @@
 </head>
 
 <body>
-    <header>
+    <section id="header">
         <h1>Portal dla wędkarzy</h1>
-    </header>
-    <section id="prawa">
+    </section>
+    <section class="section" id="prawa">
         <img src="ryba1.jpg" alt="Sum" /><br />
         <a href="kwerendy.txt">Pobierz kwerendy</a>
     </section>
 
-    <section id="lewa1">
+    <section class="section" id="lewa1">
         <h3>Ryby zamieszkujące rzeki</h3>
         <ol>
             <?php
@@ -32,7 +32,7 @@
             ?>
         </ol>
     </section>
-    <section id="lewa2">
+    <section class="section" id="lewa2">
         <h3>Ryby drapieżne naszych wód</h3>
         <table>
             <tr>
@@ -62,9 +62,9 @@
         </table>
     </section>
     
-    <footer>
+    <section id="footer">
         <p>Stronę wykonał: 123456789012</p>
-    </footer>
+    </section>
 </body>
 
 </html>

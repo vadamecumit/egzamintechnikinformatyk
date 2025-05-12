@@ -4,7 +4,7 @@
     margin: 0;
 }
 
-header {
+#header {
     margin: 0 auto;
     background-image: url("illuminati.jpg");
     height: 300px;
@@ -17,17 +17,17 @@ h2 {
     font-size: 250%;
 }
 
-header div{
+#header div{
     background-color: rgba(0,0,0, 0.5);
     height: 100%;
 }
 
-header p{
+#header p{
     text-align: center;
     font-size: 150%;
 }
 
-section {
+.section {
     padding-top: 75px;
     height: 350px;
 
@@ -77,7 +77,7 @@ tr:hover {
     color: white;
 }
 
-footer {
+#footer {
     text-align: center;
     color: white;
     background-color: grey;

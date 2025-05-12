@@ -6,13 +6,13 @@
         <link rel="stylesheet" href="styl.css" type="text/css" >
     </head>
     <body>
-        <header>
+        <section id="header">
             <div>
                 <a href="index.php"><h2>TOP SECRET ORGANISATION</h2></a>
                 <p>Tajna organizacja zrzeszająca tajnych ludzi</p>
             </div>
-        </header>
-        <section id="lewy">
+        </section>
+        <section class="section" id="lewy">
             <h3>Zlikwiduj tajnego członka</h3>
             <form method="POST" action="usun.php">
                 <label for="int1">ID:</label>
@@ -20,7 +20,7 @@
                 <button type="submit">Usuń</button>
             </form>
         </section>
-        <section id="prawy">
+        <section class="section" id="prawy">
             <table>
                 <caption>Tajna tabela z listą tajnych członków</caption>
                 <tr>
@@ -48,8 +48,8 @@
                 ?>
             </table>
         </section>
-        <footer>
+        <section id="footer">
             <p>Copyright XYZ, <?php echo date('Y') ?></p>
-        </footer>
+        </section>
     </body>
 </html>

@@ -5,10 +5,10 @@
         <title>Lista przyjaciół</title>
         <link rel="stylesheet" href="styl.css" type="text/css">
     </head>
-    <header>
+    <section id="header">
         <h1>Portal Społecznościowy - moje konto</h1>
-    </header>
-    <section>
+    </section>
+    <section id="blokGlowny">
         <h2>Moje zainteresowania</h2>
         <ul>
             <li>muzyka</li>
@@ -39,10 +39,10 @@
             $p->close();
         ?>
     </section>
-    <footer>
+    <section class="footer">
         Stronę wykonał: 123456789123
-    </footer>
-    <footer>
+    </section class="footer">
+    <section class="footer">
         <a href="mailto:ja@portal.pl">napisz do mnie</a>
-    </footer>
+    </section class="footer">
 </html>

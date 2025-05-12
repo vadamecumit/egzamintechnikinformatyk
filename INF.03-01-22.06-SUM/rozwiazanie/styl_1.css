@@ -2,7 +2,7 @@
     font-family: Helvetica;
 }
 
-header, footer{
+#header, #footer{
     background-color: #00838F;
     color: white;
     padding: 5px;
@@ -53,10 +53,10 @@ tr:hover{
     background-color: #4FB3BF;
 }
 
-section{
+.section{
     float:right;
 }
 
-footer{
+#footer{
     clear: both;
 }
