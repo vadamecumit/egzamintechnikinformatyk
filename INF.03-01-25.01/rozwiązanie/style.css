@@ -1,0 +1,49 @@
+*{ 
+    font-family: Helvetica;
+}
+
+body{
+    background-color: #eaeaea;
+}
+
+#stopka, nav{
+    background-color: #625b5b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+ul{
+    margin-left: 40px;
+    list-style: circle;
+}
+
+nav a{
+    font-weight: bold;
+    background-color: #eaeaea;
+    color: #625b5b;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 20px;
+}
+
+nav a:hover{
+    background-color: #625b5b;
+    color: #eaeaea;
+    border: solid 1px #eaeaea;
+}
+
+table{
+    border: dashed 1px #625b5b;
+    width: 60%;
+    margin-left: 40px;
+    text-align: center;
+}
+
+.kontrolki{
+    padding: 5px;
+}

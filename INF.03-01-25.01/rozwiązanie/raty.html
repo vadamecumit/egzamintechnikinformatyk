@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kursy komputerowe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="naglowek"> 
+        <img src="banner.png" alt="kursy komputerowe"> 
+    </section>
+    <nav>
+        <a href="index.html">Strona główna</a>
+        <a href="raty.html">Koszt rat</a>
+        <a href="https://moje-szkolenia.pl">Nasz partner</a>
+    </nav>
+    <section id="glowny">
+        <h3>Oblicz miesięczną ratę</h3>
+        <form>
+            <input class="kontrolki" type="checkbox" id="kursReact"><label for="kursReact">Kurs React.js</label><br>
+            <input class="kontrolki" type="checkbox" id="kursJS"><label for="kursReact">Kurs JavaScript</label><br>
+            <label for="liczbaRat">Liczba rat:</label><input class="kontrolki" type="number" id="liczbaRat"><br>
+            <select class="kontrolki" id="miasto">
+                <option>Warszawa</option>
+                <option>Katowice</option>
+                <option>Gdańsk</option>
+            </select><br>
+            <button class="kontrolki" type="button" onclick="oblicz()">Oblicz</button>
+        </form>
+        <p id="wynik"></p>
+    </section>
+    <section id="stopka">
+        <p>Autor strony: 123123123</p>
+    </section>
+</body>
+<script>
+    function oblicz()
+    {
+        const cenaKursuReact = 5000;
+        const cenaKursuJS = 3000;
+        let miasto = document.querySelector('#miasto').value;
+        let ileRat = parseInt(document.querySelector('#liczbaRat').value);
+
+        let kosztCalokowity = 0;
+        if(document.querySelector('#kursReact').checked == true)
+            kosztCalokowity += cenaKursuReact;
+
+        if(document.querySelector('#kursJS').checked == true)
+            kosztCalokowity += cenaKursuJS;
+
+        let rata = kosztCalokowity / ileRat;
+
+        let tekst = "Kurs odbędzie się w " + miasto + ". Koszt całkowity: " + kosztCalokowity + " zł. Płacisz " + ileRat + " rat po " + rata + "zł."; 
+
+        document.querySelector('#wynik').innerText = tekst;
+
+    }
+    
+</script>
+</html>
